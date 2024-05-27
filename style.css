@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #3c96ed;
+}
+
+body{
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#wrapper{
+    height: 100vh;
+}
+
+#container{
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.column{
+    flex-grow: 1;
+    width: 50%;
+}
+
+.left{
+    background-image: url("./assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.right{
+    padding-left: 20px;
+}
+
+.login-panel{
+    background-color: #FFF;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img{
+    width: 175px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"], input[type="text"] {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(234, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 320px;
+    color: #000000;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder{
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus, input[type="text"]:focus{
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
+input[type="submit"]{
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: #3c96ed;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.infobox{
+    background-color: #FFF;
+    border: 1px solid rgb(234, 234, 234);
+    margin: 10px auto 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infobox p{
+    user-select: none;
+}
+
+.infobox p a{
+    font-weight: bold;
+    user-select: none;   
+}
+
+.apk{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.apps{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.apps img{
+    height: 40px;
+    padding: 0 2px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+footer a{
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.text-small{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#container-signup{
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.message{
+    margin: 10px 70px;
+}
+
+.message span{
+    font-weight: bold;
+    color: #8e8e8e;
+    font-size: 17px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.cta-button{
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: #0095f6;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.divisor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line{
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 35%;
+}
+
+.divisor-tag{
+    margin: 0 2.5%;
+    color: #8e8e8e;
+    user-select: none;
+}
+
+@media (max-width: 790px){
+    .left{
+        display: none;
+    }
+
+    #container{
+        width: 80%;
+    }
+
+    .right{
+        padding-left: 0;
+    }
+
+    footer{
+        margin-top: 20px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    footer a{
+        margin: 2px 3px;
+    }
+}
+
+@media (max-width: 560px) {
+    #container{
+        width: 90%;
+    }
+
+    #container-signup{
+        width: 90%;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"] {
+        width: 80%;
+    }
+
+    .cta-button{
+        width: 85%;
+    }
+
+    .message span{
+        font-size: 16px;
+        line-height: 3px;
+    }
+
+    footer{
+        margin-top: -70px;
+        width: 100%;
+
+    }
+
+    footer a{
+        margin: 2px 3px;
+    }
+}
